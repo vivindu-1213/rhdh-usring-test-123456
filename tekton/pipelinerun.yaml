@@ -1,0 +1,31 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: rhdh-usring-test-123456-pipeline-run-init
+  namespace: wwdu
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+  labels:
+    tekton.dev/pipeline: rhdh-usring-test-123456-pipeline
+    type: pipeline
+spec:
+  params:
+    - name: source-repo
+      value: 'https://github.com/vivindu-1213/rhdh-usring-test-123456.git'
+    - name: source-branch
+      value: main
+    - name: output-image
+      value: quay.io/https://ocp-registry2.alaudatech.net:8443/repository/init/wwdu/rhdh-usring-test-123456
+  pipelineRef:
+    name: rhdh-usring-test-123456-pipeline
+  serviceAccountName: pipeline
+  workspaces:
+    - name: source-folder
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 1Gi
