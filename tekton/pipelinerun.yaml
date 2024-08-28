@@ -16,7 +16,7 @@ spec:
     - name: source-branch
       value: main
     - name: output-image
-      value: quay.io/https://ocp-registry2.alaudatech.net:8443/repository/init/wwdu/rhdh-usring-test-123456
+      value: ocp-registry2.alaudatech.net:8443/init/rhdh-usring-test-123456
   pipelineRef:
     name: rhdh-usring-test-123456-pipeline
   serviceAccountName: pipeline

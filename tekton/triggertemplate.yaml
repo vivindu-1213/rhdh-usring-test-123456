@@ -12,7 +12,7 @@ spec:
       description: The repo url
     - name: output-image
       description: reference of the image that will get created
-      default: quay.io/https://ocp-registry2.alaudatech.net:8443/repository/init/wwdu/rhdh-usring-test-123456
+      default: ocp-registry2.alaudatech.net:8443/init/rhdh-usring-test-123456
   resourcetemplates:
     - apiVersion: tekton.dev/v1beta1
       kind: PipelineRun
