@@ -5,6 +5,7 @@ metadata:
   name: rhdh-usring-test-123456
   annotations:
     tektonci/build-namespace: wwdu
+    backstage.io/kubernetes-id: rhdh-usring-test-123456
     backstage.io/kubernetes-label-selector: "rhdh.redhat.com/app=backstage-developer-hub"
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: vivindu-1213/rhdh-usring-test-123456
