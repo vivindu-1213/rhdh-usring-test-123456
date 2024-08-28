@@ -17,7 +17,7 @@ spec:
       type: string
     - name: output-image
       description: reference of the image that will get created
-      default: quay.io/https://ocp-registry2.alaudatech.net:8443/repository/init/wwdu/rhdh-usring-test-123456
+      default: default: image-registry.openshift-image-registry.svc:5000/rhdh-usring-test-123456
       type: string
   tasks:
     - name: git-clone
