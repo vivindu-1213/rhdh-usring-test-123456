@@ -8,7 +8,7 @@ metadata:
     backstage.io/kubernetes-id: rhdh-usring-test-123456
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: vivindu-1213/rhdh-usring-test-123456
-    janus-idp.io/tekton: rhdh-usring-test-123456-pipeline
+    janus-idp.io/tekton: rhdh-usring-test-123456
 spec:
   type: api
   system: system:default/janus-idp
