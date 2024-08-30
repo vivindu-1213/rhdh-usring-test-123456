@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 router.get('/', function (req, res) {
-  res.send('～～～～～～～ hei, the World ～～～～～～～～～')
+  res.send('～～～～～～～ hei, the World test ～～～～～～～～～')
 })
 
 app.use('/', router)
